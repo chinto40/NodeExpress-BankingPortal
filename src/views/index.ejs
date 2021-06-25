@@ -2,14 +2,14 @@
 
 
 <body>
-    <div class="container" >
-        <h1><%= title%></h1>
+    <div class="container">
+        <h1><%=title %></h1>
         
         <a href='/profile'>Profile</a>
     </div>
-    <%- include('summary', {accounts.checking })%>
-    <%- include('summary', {accounts.savings })%>
-    <%- include('summary', {accounts.credit })%>
+    <%- include('summary', {account: accounts.checking }) %>
+    <%- include('summary', {account: accounts.savings }) %>
+    <%- include('summary', {account: accounts.credit }) %>
 
     <br><a href='/transfer'>Transfer</a>
 </body>
